@@ -1,6 +1,6 @@
 import React from 'react'
 
-const cliente = () => {
+const Cliente = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const cliente = () => {
     )
 }
 
-export default cliente
+export default Cliente

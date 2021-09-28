@@ -1,3 +1,4 @@
+import React from 'react'
 import './App.css';
 import './w3.css';
 import 'nes.css/css/nes.min.css';

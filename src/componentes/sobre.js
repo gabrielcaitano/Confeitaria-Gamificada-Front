@@ -1,6 +1,6 @@
 import React from 'react'
 
-const sobre = () => {
+const Sobre = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const sobre = () => {
     )
 }
 
-export default sobre
+export default Sobre

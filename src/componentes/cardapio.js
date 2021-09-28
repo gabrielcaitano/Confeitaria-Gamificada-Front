@@ -7,7 +7,7 @@ import Cupcake1 from '../imagens/cupcake_1.jpg'
 
 
 
-const cardapio = () => {
+const Cardapio = () => {
 
 
     return (
@@ -482,4 +482,4 @@ const cardapio = () => {
 }
 
 
-export default cardapio
+export default Cardapio

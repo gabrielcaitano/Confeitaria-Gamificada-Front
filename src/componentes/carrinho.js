@@ -1,6 +1,6 @@
 import React from 'react'
 
-const carrinho = () => {
+const Carrinho = () => {
     return (
         <div>
 
@@ -8,4 +8,4 @@ const carrinho = () => {
     )
 }
 
-export default carrinho
+export default Carrinho

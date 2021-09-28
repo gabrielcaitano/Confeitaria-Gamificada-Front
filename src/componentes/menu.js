@@ -3,7 +3,7 @@ import { FaHome, FaShoppingBasket } from 'react-icons/fa';
 import { BiPhotoAlbum, BiBookHeart, BiUserCircle, BiPhone } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
-const menu = () => {
+const Menu = () => {
   return (
 
 
@@ -29,10 +29,10 @@ const menu = () => {
         <i className="w3-xxlarge"><BiBookHeart /></i>
         <p className="bit-font w3-tiny">Sobre</p>
       </Link>
-      <Link className="w3-bar-item w3-button w3-hover-orange">
+      <button className="w3-bar-item w3-button w3-hover-orange">
         <i className="w3-xxlarge"><BiUserCircle /></i>
         <p className="bit-font w3-tiny">Login<br /><hr className="zerandoHr" />Cadastro</p>
-      </Link>
+      </button>
 
 
     </nav>
@@ -40,4 +40,4 @@ const menu = () => {
   )
 }
 
-export default menu
+export default Menu

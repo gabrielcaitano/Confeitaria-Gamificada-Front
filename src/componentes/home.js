@@ -3,7 +3,7 @@ import LogoGato from '../imagens/logoConfeitaria_01.png'
 import { Link } from "react-router-dom"
 
 
-const home = () => {
+const Home = () => {
     return (
         <div className="marginLeft">
             <div className="w3-content w3-center">
@@ -18,4 +18,4 @@ const home = () => {
     )
 }
 
-export default home
+export default Home
