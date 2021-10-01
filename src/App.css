@@ -98,10 +98,8 @@ i{
     resize: none !important; 
 }
 
-
-
 .bg {
-    background: url('./imagens/bg2.gif') no-repeat center fixed;
+    background: url('./imagens/bg3.gif') no-repeat center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -171,6 +169,19 @@ i{
 
 }
 
+
+.fixoModal {
+  width: 483px;
+  overflow: hidden;
+  
+}
+.rolavelModal {
+  height: 425px;
+  width: 500px;
+  overflow-y: scroll;
+
+}
+
 .menuProdutos{
 border-radius: 15px;
 }
@@ -196,4 +207,6 @@ ul{
   cursor: url('./cursor/cursor2.cur'), auto !important;
 }
 
-
+.tamanhoLabel{
+  width: 10vw !important;
+}

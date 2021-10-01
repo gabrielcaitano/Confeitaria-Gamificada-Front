@@ -1,0 +1,14 @@
+.tamanhoModal{
+    width: 30%;
+    max-width: 800px;
+    margin-top: 20vh;
+}
+
+input{
+    width: 20vw !important;
+}
+
+.button{
+    width: 20vw;
+}
+
