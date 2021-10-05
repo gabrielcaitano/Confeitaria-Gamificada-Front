@@ -12,6 +12,7 @@ import Sobre from './componentes/Sobre';
 import Cardapio from './componentes/Cardapio';
 import Carrinho from './componentes/Carrinho';
 import Cliente from './componentes/Cliente';
+import Cadastro from './componentes/Cadastro';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Contato' component={Contato} />
         <Route path='/Cardapio' component={Cardapio} />
         <Route path='/Carrinho' component={Carrinho} />
+        <Route path='/Cadastro' component={Cadastro} />
       </div>
     </BrowserRouter>
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { FaHome, FaShoppingBasket } from 'react-icons/fa';
-import { BiPhotoAlbum, BiBookHeart, BiUserCircle, BiPhone } from 'react-icons/bi';
+import { FaHome, FaShoppingBasket, FaGamepad } from 'react-icons/fa';
+import { BiBookHeart, BiUserCircle, BiPhone } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import Relogio from './Relogio';
 import Modal from './Modal';
@@ -24,8 +24,8 @@ const Menu = () => {
         <p className="bit-font w3-tiny">Produtos</p>
       </Link>
       <Link to="Galeria" className="w3-bar-item w3-button w3-hover-orange">
-        <i className="w3-xxlarge"><BiPhotoAlbum /></i>
-        <p className="bit-font w3-tiny">Galeria</p>
+        <i className="w3-xxlarge"><FaGamepad /></i>
+        <p className="bit-font w3-tiny">Nyan Nyann</p>
       </Link>
       <Link to="Contato" className="w3-bar-item w3-button w3-hover-orange">
         <i className="w3-xxlarge"><BiPhone /></i>
@@ -41,10 +41,6 @@ const Menu = () => {
       </button>
       <Modal className="back-drop" abrir={aberto} fechar={() => setAberto(false)} />
       <Relogio />
-
-
-
-
 
     </nav>
 
