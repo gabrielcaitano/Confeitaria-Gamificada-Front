@@ -26,7 +26,7 @@ function Relogio() {
 
     return (
 
-        <div className="w3-xxlarge w3-padding-16 w3-border w3-hover-orange">
+        <div className="w3-xlarge w3-padding-16 w3-border w3-hover-orange">
             {dateTime.hora}:{dateTime.minutos}:{dateTime.segundos}
         </div>
 

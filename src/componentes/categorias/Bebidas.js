@@ -21,7 +21,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake115<span className="w3-right w3-tag w3-round">R$20,00/un.</span></p>
+                        <p>Bebida1<span className="w3-right w3-tag w3-round">R$20,00/un.</span></p>
 
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
@@ -38,7 +38,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake2<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida2<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
                     </div>
@@ -54,7 +54,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake3<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida3<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
                     </div>
@@ -70,7 +70,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake4<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida4<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake5<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida5<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida7<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida8<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const Bebidas = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bebida9<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>

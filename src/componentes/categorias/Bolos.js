@@ -21,7 +21,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake10<span className="w3-right w3-tag w3-round">R$10,00/un.</span></p>
+                        <p>Bolo1<span className="w3-right w3-tag w3-round">R$10,00/un.</span></p>
 
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
@@ -38,7 +38,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake2<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo2<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
                     </div>
@@ -54,7 +54,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake3<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo3<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
                     </div>
@@ -70,7 +70,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake4<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo4<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake5<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo5<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -100,7 +100,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo7<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo8<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Cupcake6<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
+                        <p>Bolo9<span className="w3-right w3-tag w3-round">R$00,00/un.</span></p>
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
                     </div>
                 </div>
