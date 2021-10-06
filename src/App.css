@@ -57,7 +57,7 @@ button.new:hover{
 }
 
 input:hover{
-    cursor: url('./cursor/cursor3.cur'), auto !important;
+    cursor: url('./cursor/cursor2.cur'), auto !important;
 }
 
 input.new:hover{
@@ -75,6 +75,11 @@ i{
 .Label{
     width: 45vw !important;
     margin: auto !important;
+}
+
+.buttonCadastro{
+  width: 50vw !important;
+
 }
 
 .Msg{
@@ -99,6 +104,12 @@ i{
 
   .imagem {
     display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .imagemDemo {
+    margin-top: 10%;
     width: 100%;
     height: auto;
   }
@@ -153,6 +164,17 @@ i{
 
 }
 
+.fixoCadastro {
+  width: 983.4px;
+  overflow: hidden;
+}
+
+.rolavelCadastro {
+  height: 500px;
+  width: 1000px;
+  overflow-y: scroll;
+}
+
 .menuProdutos{
 border-radius: 15px;
 }
@@ -182,9 +204,12 @@ ul{
   width: 10vw !important;
 }
 
-.testeTeste{
-  width: 640px !important;
-  height: 427px !important;
-  max-width: 640px !important;
-  max-height: 427px !important;
+.login-legend{
+  margin: 20px;
+  width: 320px;
 }
+
+.my-fieldset{
+  border: 3px solid;
+}
+

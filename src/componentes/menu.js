@@ -23,7 +23,7 @@ const Menu = () => {
         <i className="w3-xxlarge"><FaShoppingBasket /></i>
         <p className="bit-font w3-tiny">Produtos</p>
       </Link>
-      <Link to="Galeria" className="w3-bar-item w3-button w3-hover-orange">
+      <Link to="NyanNyan" className="w3-bar-item w3-button w3-hover-orange">
         <i className="w3-xxlarge"><FaGamepad /></i>
         <p className="bit-font w3-tiny">Nyan Nyann</p>
       </Link>

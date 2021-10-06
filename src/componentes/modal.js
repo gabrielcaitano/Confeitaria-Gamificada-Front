@@ -24,7 +24,7 @@ function Modal({ abrir, fechar }) {
                 <div className="tamanhoModal w3-gray w3-content w3-animate-left">
 
                     <div className="w3-black w3-cell-row w3-padding">
-                        <div className="bit-font w3-xlarge w3-center w3-cell teste">Login/Cadastro</div>
+                        <div className="bit-font w3-xlarge w3-center w3-cell">Login/Cadastro</div>
                         <button onClick={fechar} className="nes-btn bit-font w3-cell">X</button>
                     </div>
                     <form>
@@ -33,8 +33,8 @@ function Modal({ abrir, fechar }) {
                             <div className="w3-center">
 
                                 <p className="bit-font w3-large w3-center">Login</p>
-                                <input className="nes-input w3-animate-input w3-large w3-text-orange" type="email" placeholder="Email" />
-                                <input className="nes-input w3-animate-input w3-margin-top w3-large w3-text-orange" type="password" placeholder="Senha" />
+                                <input className="nes-input w3-animate-input w3-large w3-text-orange" type="email" placeholder="Email" required />
+                                <input className="nes-input w3-animate-input w3-margin-top w3-large w3-text-orange" type="password" placeholder="Senha" required />
                                 <button className="w3-margin-top nes-btn bit-font button w3-margin-bottom" type="submit" > Entrar! </button>
 
                             </div>
