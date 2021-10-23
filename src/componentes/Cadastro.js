@@ -1,8 +1,13 @@
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
-
+import Api from '../services/Api'
 
 function Cadastro() {
+
+    function onSubmit(values) {
+        Api.post('cadastro', values)
+        console.log('dados', values);
+    }
 
     function cliqueCep(ev, setFieldValue) {
         const { value } = ev.target;
@@ -24,10 +29,18 @@ function Cadastro() {
     return (
         <div className="marginLeft">
             <Formik
+                onSubmit={onSubmit}
                 initialValues={{
+                    email: '',
+                    senha: '',
+                    nome: '',
+                    nascimento: '',
+                    cpf: '',
+                    celular: '',
                     cep: '',
                     logradouro: '',
                     bairro: '',
+
                 }}
                 render={({ setFieldValue }) => (
                     <div className="w3-content">
@@ -46,7 +59,7 @@ function Cadastro() {
 
                                         <div className="w3-half w3-padding w3-section">
                                             <label>Senha: </label><br />
-                                            <Field className="nes-input w3-animate-input w3-large w3-text-orange" type="password" name="email" placeholder="Digite Sua Senha" required />
+                                            <Field className="nes-input w3-animate-input w3-large w3-text-orange" type="password" name="senha" placeholder="Digite Sua Senha" required />
                                         </div>
                                     </fieldset>
 
