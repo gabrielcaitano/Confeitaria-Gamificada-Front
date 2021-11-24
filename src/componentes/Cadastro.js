@@ -6,17 +6,21 @@ import './Cliente'
 
 function Cadastro() {
 
-    function onSubmit(values, setSubmitting) {
-        Api.post('cadastro', values)
-        console.log('dados', values);
+    async function onSubmit(values, setSubmitting) {
+        const notf = await Api.post('cadastro', values)
+        //console.log(notf.data);
 
         setTimeout(() => {
-            alert('Você está logado com sucesso');
+            alert(notf.data);
             setSubmitting(false);
         }, 500);
 
         setTimeout(() => {
-            window.location.replace('/Cliente');
+            if(notf.data === 'USUÁRIO CADASTRADO😊\nSeja Bem vindo(a) a Pumpkitty, você ja está pronto para realizar suas compras! 🧁🧁🧁'){
+                window.location.replace('/');
+            }else{
+                window.location.replace('/Cadastro'); //Ou pode apenas limpar o formulario!
+            }
         }, 1000);
     }
 
