@@ -3,7 +3,7 @@ import { FaHome, FaShoppingBasket, FaGamepad } from 'react-icons/fa';
 import { BiBookHeart, BiUserCircle, BiPhone } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import Relogio from './Relogio';
-import Modal from './Modal';
+import Modal from './Modal.js';
 
 
 

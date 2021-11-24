@@ -78,7 +78,12 @@ i{
 }
 
 .buttonCadastro{
-  width: 50vw !important;
+  width: 100% !important;
+
+}
+
+.buttonLimpar{
+  width: 90% !important;
 
 }
 
@@ -139,7 +144,7 @@ i{
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 18px;
+    font-size: 14px;
     white-space: nowrap;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -148,7 +153,10 @@ i{
 
   .w3container {
     position: relative;
-    
+  }
+
+  .boxProdutos{
+    width: 40% !important;
   }
 
 .fixo {
@@ -214,3 +222,6 @@ ul{
   border: 3px solid;
 }
 
+.tamanhoFonte{
+  font-size: 15px;
+}

@@ -11,7 +11,7 @@ import Torta5 from '../../imagens/produtos/Bolos e Tortas/Torta5.jpg'
 
 const Bolos = () => {
     return (
-        <div className="w3-row-padding w3-margin-top">
+        <div className="w3-row-padding w3-margin-top  boxProduto">
             <div className="w3-third">
                 <div className="w3-card w3-margin">
                     <div className="w3container">
@@ -21,7 +21,7 @@ const Bolos = () => {
                         </div>
                     </div>
                     <div className="w3-container w3-padding">
-                        <p>Bolo1<span className="w3-right w3-tag w3-round">R$10,00/un.</span></p>
+                        <p>Barba Negra<span className="w3-right w3-tag w3-round">R$10,00/un.</span></p>
 
                         <div><button className="w3-center w3-button w3-orange w3-hover-blue w3-round-large ajusteBT">Comprar</button></div>
 
