@@ -11,6 +11,8 @@ import Bebida7 from '../../imagens/produtos/Bebidas/Bebida7.jpg'
 import Bebida8 from '../../imagens/produtos/Bebidas/Bebida8.jpg'
 import Bebida9 from '../../imagens/produtos/Bebidas/Bebida9.jpg'
 
+
+
 class Bebidas extends Component {
 
     state = {
@@ -26,6 +28,7 @@ class Bebidas extends Component {
     render() {
 
         const { produtos } = this.state;
+
 
         return (
             <div className="w3-row-padding w3-margin-top">

@@ -11,11 +11,16 @@ import Torta3 from '../../imagens/produtos/Bolos e Tortas/Torta3.jpg'
 import Torta4 from '../../imagens/produtos/Bolos e Tortas/Torta4.jpg'
 import Torta5 from '../../imagens/produtos/Bolos e Tortas/Torta5.jpg'
 
+
+
 class Bolos extends Component {
+
 
     state = {
         produtos: []
     }
+
+
 
     async componentDidMount() {
         const response = await api.post('/produto', {
@@ -26,6 +31,7 @@ class Bolos extends Component {
     render() {
 
         const { produtos } = this.state;
+
 
         return (
             <div className="w3-row-padding w3-margin-top  boxProduto">
