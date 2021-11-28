@@ -4,6 +4,13 @@
     margin-top: 20vh;
 }
 
+.tamanhoCripto{
+    width: 70%;
+    height: 50%;
+    max-width: 800px;
+    margin-top: 20vh;
+}
+
 input{
     width: 20vw !important;
 }

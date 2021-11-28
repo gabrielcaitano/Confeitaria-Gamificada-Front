@@ -1,9 +1,10 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import { Formik, Field, Form } from 'formik';
-import Api from '../services/Api'
+import api from '../services/Api'
 import './Modal.css'
 import { Link } from 'react-router-dom';
+import { useAlert } from 'react-alert'
 
 
 const Style = {
@@ -16,16 +17,37 @@ const Style = {
     marginLeft: 120,
 }
 
-
-function onSubmit(values) {
-    Api.post('login', values)
-    console.log('dados', values);
-}
-
-
 function Modal({ abrir, fechar }) {
+
+    const alert = useAlert()
+    async function onSubmit(values) {
+
+        var confereLogin = await api.post('login', values)
+
+        if (confereLogin.data != null) {
+            alert.show('Usuário logado com sucesso🙂🎃', {
+                type: 'success'
+            })
+            setTimeout(() => {
+                window.location.replace('/')
+            }, 3000);
+        } else {
+            alert.show('Erro ao logar😞', {
+                type: 'error'
+            })
+        }
+
+    }
+
+
     if (!abrir) return null
 
+    async function Logado() {
+        const userID = await api.get('/login')
+        console.log(userID.data)
+        if (userID.data != null) { window.location.replace('/Cliente') }
+    }
+    Logado()
     return ReactDom.createPortal(
         <>
 
@@ -36,8 +58,8 @@ function Modal({ abrir, fechar }) {
                         email: '',
                         senha: '',
                     }}
-                    render={() => (
-
+                >
+                    {({ isValid }) => (
                         <div className="tamanhoModal w3-gray w3-content w3-animate-left">
 
                             <div className="w3-black w3-cell-row w3-padding">
@@ -52,8 +74,7 @@ function Modal({ abrir, fechar }) {
                                         <p className="bit-font w3-large w3-center">Login</p>
                                         <Field className="nes-input w3-animate-input w3-large w3-text-orange" name="email" type="email" placeholder="Email" required />
                                         <Field className="nes-input w3-animate-input w3-margin-top w3-large w3-text-orange" name="senha" type="password" placeholder="Senha" required />
-                                        <button className="w3-margin-top nes-btn bit-font button w3-margin-bottom" type="submit" > Entrar! </button>
-
+                                        <button className="w3-margin-top nes-btn bit-font button w3-margin-bottom" type="submit" disabled={!isValid} > Entrar! </button>
                                     </div>
 
                                     <div className="w3-right">
@@ -64,9 +85,8 @@ function Modal({ abrir, fechar }) {
                                 </div>
                             </Form>
                         </div>
-
                     )}
-                />
+                </Formik>
             </div>
         </>,
         document.getElementById('portal')

@@ -5,9 +5,18 @@ import Api from '../services/Api'
 
 const Contato = () => {
 
-    function onSubmit(values) {
+    function onSubmit(values, setSubmitting) {
         Api.post('mail', values)
         console.log('dados', values);
+        console.log(values)
+        setTimeout(() => {
+            alert('Obrigado por entrar em contato conosco 🙂🎃');
+            setSubmitting(false);
+        }, 500);
+
+        setTimeout(() => {
+            window.location.replace('/');
+        }, 1000);
     }
 
     return (
@@ -20,8 +29,8 @@ const Contato = () => {
                     assunto: '',
                     mensagem: '',
                 }}
-                render={() => (
-
+            >
+                {({ isValid }) => (
                     <div className="w3-content">
 
                         <div className="w3-center w3-xxxlarge w3-padding w3-text-white">
@@ -36,11 +45,11 @@ const Contato = () => {
 
                         <Form className="w3-center w3-padding-64">
 
-                            <Field className="nes-input is-dark w3-large  w3-animate-input Label w3-text-orange w3-animate-left" name="nome" type="text" placeholder="Nome" />
-                            <Field className="nes-input is-dark w3-margin-top w3-large w3-animate-input Label w3-text-orange w3-animate-right" name="email" type="email" placeholder="Email" />
-                            <Field className="nes-input is-dark w3-margin-top w3-large w3-animate-input Label w3-text-orange w3-animate-left" name="assunto" type="text" placeholder="Assunto" />
-                            <Field className="nes-input is-dark w3-margin-top Label Msg w3-text-orange w3-animate-right" name="mensagem" type="text" placeholder="Mensagem" />
-                            <button className="w3-margin-top nes-btn bit-font Label" type="submit"> ENVIAR! </button>
+                            <Field className="nes-input is-dark w3-large  w3-animate-input Label w3-text-orange w3-animate-left" name="nome" type="text" placeholder="Nome" required />
+                            <Field className="nes-input is-dark w3-margin-top w3-large w3-animate-input Label w3-text-orange w3-animate-right" name="email" type="email" placeholder="Email" required />
+                            <Field className="nes-input is-dark w3-margin-top w3-large w3-animate-input Label w3-text-orange w3-animate-left" name="assunto" type="text" placeholder="Assunto" required />
+                            <Field className="nes-input is-dark w3-margin-top Label Msg w3-text-orange w3-animate-right" name="mensagem" type="text" placeholder="Mensagem" required />
+                            <button className="w3-margin-top nes-btn bit-font Label" disabled={!isValid} type="submit"> ENVIAR! </button>
 
                             <div className="w3-padding-top-32 w3-center">
                                 <a href="https://pt-br.facebook.com/" target="_blank" rel="noreferrer" className="nes-icon facebook is-medium w3-padding"> </a>
@@ -51,7 +60,7 @@ const Contato = () => {
                         </Form>
                     </div>
                 )}
-            />
+            </Formik>
         </div>
     )
 }

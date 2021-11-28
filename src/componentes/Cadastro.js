@@ -2,21 +2,34 @@ import React from 'react';
 import { Formik, Field, Form } from 'formik';
 import Api from '../services/Api'
 import Schema from '../Schema';
+import { useAlert } from 'react-alert'
 import './Cliente'
 
 function Cadastro() {
 
-    function onSubmit(values, setSubmitting) {
-        Api.post('cadastro', values)
-        console.log('dados', values);
+    const alert = useAlert()
 
+    async function onSubmit(values) {
+        const notf = await Api.post('cadastro', values)
+        console.log(notf.data)
         setTimeout(() => {
-            alert('Você está logado com sucesso');
-            setSubmitting(false);
-        }, 500);
+            if (notf.data != null) {
+                alert.show('USUÁRIO CADASTRADO😊', {
+                    type: 'success'
+                })
 
-        setTimeout(() => {
-            window.location.replace('/Cliente');
+                setTimeout(() => {
+                    window.location.replace('/')
+                }, 7000);
+
+            } else {
+                alert.show('Erro ao cadastrar🙁', {
+                    type: 'error'
+                })
+                setTimeout(() => {
+                    window.location.replace('/Cadastro')
+                }, 7000);
+            }
         }, 1000);
     }
 
@@ -174,7 +187,7 @@ function Cadastro() {
                             </div>
                             <div className="w3-center">
                                 <div className="w3-twothird w3-container">
-                                    <button className="w3-margin-top w3-padding nes-btn bit-font buttonCadastro" disabled={!isValid} type="submit"> ENVIAR! </button>
+                                    <button className="w3-margin-top w3-padding nes-btn bit-font buttonCadastro" type="submit"> ENVIAR! </button>
                                 </div>
                                 <div className="w3-third w3-container">
                                     <button className="w3-margin-top w3-padding nes-btn bit-font buttonLimpar" onClick={handleReset} disabled={!dirty || isSubmitting}>LIMPAR!</button>

@@ -17,14 +17,14 @@ const Cardapio = () => {
                     <hr className="w3-center" />
 
                     <TabList>
-                        <div className="w3-row w3-center w3-border w3-border-dark-grey w3-black w3-margin-bottom menuProdutos menuProdutosHover w3-animate-right">
+                        <div className="w3-row w3-center w3-border w3-border-dark-grey w3-black w3-margin-bottom menuProdutos menuProdutosHover">
                             <Tab className="w3-col s4 Evento w3-padding-large w3-hover-orange div w3-large bit-font">Cupcakes</Tab>
                             <Tab className="w3-col s4 Evento w3-padding-large w3-hover-orange div w3-large bit-font">Bolos/Tortas</Tab>
                             <Tab className="w3-col s4 Evento w3-padding-large w3-hover-orange div w3-large bit-font">Bebidas</Tab>
                         </div>
                     </TabList>
 
-                    <div className="fixo w3-animate-left">
+                    <div className="fixo">
                         <div className="rolavel">
 
                             <TabPanel className="w3-container corFundo">
