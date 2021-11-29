@@ -1,22 +1,25 @@
 import React from 'react';
 import { Formik, Field, Form } from 'formik';
 import Api from '../services/Api'
-
+import { useAlert } from 'react-alert'
 
 const Contato = () => {
 
-    function onSubmit(values, setSubmitting) {
+    const alert = useAlert()
+    function onSubmit(values) {
         Api.post('mail', values)
         console.log('dados', values);
         console.log(values)
         setTimeout(() => {
-            alert('Obrigado por entrar em contato conosco 🙂🎃');
-            setSubmitting(false);
-        }, 500);
+            alert.show('Entraremos em contato em breve!', {
+                title: "EMAIL ENVIADO COM SUCESSO😊🎃",
+                timeout: 3000
+            });
+        }, 1000);
 
         setTimeout(() => {
             window.location.replace('/');
-        }, 1000);
+        }, 4000);
     }
 
     return (

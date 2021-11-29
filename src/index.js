@@ -1,28 +1,19 @@
 import React from 'react';
-import { transitions, positions, Provider as AlertProvider } from 'react-alert'
+import { positions, Provider } from "react-alert";
 import { render } from 'react-dom'
-import AlertTemplate from 'react-alert-template-basic'
+import AlertMUITemplate from "react-alert-template-mui";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-export const types = {
-  INFO: 'info',
-  SUCCESS: 'success',
-  ERROR: 'error'
-}
-
 const options = {
-  position: positions.TOP_CENTER,
-  timeout: 4000,
-  offset: '30px',
-  transition: transitions.FADE
+  position: positions.MIDDLE,
 }
 
 const Root = () => (
-  <AlertProvider template={AlertTemplate} {...options} >
+  <Provider template={AlertMUITemplate} {...options} >
     <App />
-  </AlertProvider>
+  </Provider>
 )
 
 render(<Root />, document.getElementById('root'))

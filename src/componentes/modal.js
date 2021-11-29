@@ -25,15 +25,18 @@ function Modal({ abrir, fechar }) {
         var confereLogin = await api.post('login', values)
 
         if (confereLogin.data != null) {
-            alert.show('Usuário logado com sucesso🙂🎃', {
-                type: 'success'
+            alert.show('Você ja está pronto para realizar suas compras🧁', {
+                title: "USUÁRIO LOGADO COM SUCESSO😊🎃",
+                timeout: 3000
             })
             setTimeout(() => {
                 window.location.replace('/')
             }, 3000);
         } else {
-            alert.show('Erro ao logar😞', {
-                type: 'error'
+            alert.show('Confira seus dados e tente novamente!', {
+                title: "ERRO AO LOGAR🙁",
+                timeout: 5000
+
             })
         }
 

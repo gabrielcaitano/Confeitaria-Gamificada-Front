@@ -2,6 +2,7 @@ import React from 'react'
 import api from '../services/Api';
 import { Component } from 'react'
 import { BiUserCircle } from 'react-icons/bi';
+import { decodeToken } from "react-jwt";
 
 class Login extends Component {
 
@@ -14,7 +15,11 @@ class Login extends Component {
 
         var logado
         const userID = await api.get('/login')
+        console.log('TOKEN da Sessão: ' + userID.data)
         const user = await api.get('/cliente')
+
+        const decodedToken = decodeToken(userID.data);
+        console.log('Sessão utilizada: ' + decodedToken);
 
         if (userID.data != null || user.data != null) {
             logado = true

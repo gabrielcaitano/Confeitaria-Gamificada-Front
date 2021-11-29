@@ -2,15 +2,15 @@ import * as Yup from 'yup';
 import { pt } from 'yup-locale-pt';
 Yup.setLocale(pt);
 export default Yup.object().shape({
-    email: Yup.string().email().required(),
-    senha: Yup.string().min(6).max(12).required(),
-    nome: Yup.string().min(8).max(35).required(),
-    nascimento: Yup.number().required().positive().integer(),
-    cpf: Yup.string().min(14).max(20).required(),
-    celular: Yup.string().min(13).max(20).required(),
-    cep: Yup.number().required(),
-    logradouro: Yup.string().required(),
-    bairro: Yup.string().min(2).max(30).required(),
+    email: Yup.string().min(10).max(45).email().required(),
+    senha: Yup.string().min(6).max(15).required(),
+    nome: Yup.string().min(12).max(45).required(),
+    nascimento: Yup.string().required(),
+    cpf: Yup.string().required(),
+    celular: Yup.string().required(),
+    cep: Yup.string().max(8).min(8).required(),
+    logradouro: Yup.string().max(45).required(),
+    bairro: Yup.string().max(25).required(),
     numero: Yup.number().required().positive().integer(),
 })
 
